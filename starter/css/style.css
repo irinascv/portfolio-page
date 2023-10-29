@@ -2,21 +2,25 @@
   box-sizing: border-box;
 }
 
+/*added css variables*/
 :root{
 border-radius: 0.2em;
 --color-white: #fff;
 --space-outside-beige: rgba(242, 239, 226, 0.93);
---another-beige: rgba(233, 220, 198, 0.611);
-
---font-size: 16px; 
+--another-silver: rgb(146, 144, 144);
+--another-beige: rgba(184, 178, 166, 0.84);
+--font-size: 16px;
+--font-family: 'Roboto Mono', monospace;
 }
+
 /*colors for background of selected content*/
 ::selection {
   background-color: var(--another-beige);
   color: var(--space-outside-beige);
  }
 
-body {
+/*style body with background image*/
+body, html {
   margin: 0;
   padding: 0;
   line-height: 1.5;
@@ -25,30 +29,129 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  
+
+  }
+
+/*style headers'navbar*/
+.navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px;
+  background-color: var(--another-silver);
+  }
+
+  /*style h1 element*/
+  .navbar h1 {
+      width: 25%;
+      font-weight: 300;
+      color: var(--color-white);
+      margin: 1%;
+  }
+
+  .navigation {
+    display: flex;
+    width: 70%;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 25px;
+  }
+
+/*style element a, removing underline, setting color*/
+  .navigation a {
+    text-decoration: none;
+    color: var(--color-white);
+    font-family: var(--font-family);
+  }
+
+/*style about me, work and contact me p elements so they would have space between each other*/
+.aboutme-nav {
+  padding: 2%;
 }
 
-.navbar {
-  width: 100vh;
-  background-color: transparent;
+  .work-in-nav {
+   margin: 2%;
+  }
+.contact-nav {
+  margin: 2%;
+}
+
+/*adjusting logo banner div; using it to place avatar div and quote for styling purposes*/ 
+.logo-banner {
+  margin: 2%;
+}
+
+.logo-banner h2 {
+  align-items: center;
+  color: var(--color-white)
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 1.5%;
+  margin-bottom: 1.5%;
+  margin-top: 1.5%;
+}
+img {
+  width: 100%;
+}
+
+/*style css grid*/
+.page-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-areas:
+  "about-me work work"
+  "about-me work work"
+  "contact-me contact-me contact-me";
+;
+
+}
+
+#about-me {
+  grid-area: about-me;
+
+}
+
+#work {
+  grid-area: work;
+  background-image: url;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+}
+
+#contact-me {
+  grid-area: contact-me;
+}
+
+.page-contact-me {
+  grid-area: page-contact-me;
+
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
-  }
+  color: var(--color-white);
+  font-family: var(--font-family);
+}
 
-  .navbar ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0;
-    height: 3em;
-    padding: 0;
-  }
+p {
+  margin: 0;
+  color:#fff;
+}
 
-  .navbar ul li {
-
-  }
-
-/*.header {
+/* ignore below comment as it's another option to display header
+.header {
 padding: 20px;
 background-color: transparent;
 color: #fff;
@@ -79,27 +182,3 @@ a {
   color: #fff;
   text-decoration: none;
 } */
-
-.avatar {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  overflow: hidden;
-}
-img {
-  width: 100%;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-
-p {
-  margin: 0;
-  color:#fff;
-}
-

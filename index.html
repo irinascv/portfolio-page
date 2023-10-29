@@ -7,62 +7,55 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>irinascv: Portfolio Page / Front-End Web Development</title>
   <link rel="stylesheet" href="starter/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <!-- main logo / nav -->
-  <header>
-    <div class="navbar"> <!-- div header for my styling purposes -->
-    <h1>Irina Siceva</h1>
-    <nav>
-      <ul>
-        <li> <a href="#about-me">🔗About me</a>
-        </li>
-        <li> <a href="#work">🔗Work</a>
-        </li>
-        <li> <a href="#contact-me">🔗Contact me</a>
-        </li>
-      </ul>
+  <!-- navbar! -->
+  <header class="navbar">
+    <h1>— irinacv</h1>
+    <nav class="navigation">
+        <p class="aboutme-nav"> <a href="#about-me"> — about me</a></p>
+        <p class="work-in-nav"> <a href="#work"> — work</a></p>
+        <p class="contact-nav"> <a href="#contact-me"> — contact me</a></p>
     </nav>
-  </div>
   </header>
 
-  <!-- hero banner -->
-  <section class="hero-banner">
-    <div class="avatar"><img src="starter/images/avatar.png" alt="Avatar"></div>
-    <div>
-      <h2>Cool subtitle here!</h2>
-    </div>
+  <div class="avatar"><img src="starter/images/avatar.png" alt="Avatar"></div> <!--adding avatar in div for styling purposes-->
+  <section class="logo-banner">
+      <h2>« hard work beats talent<br>
+        when talent doesn't work hard 	»</h2> <!-- space for future work related lines -->
+      <p>— tim notke</p>
   </section>
 
   <main class="page-wrapper">
-    <!-- about me -->
     <section class="page-section" id="about-me">
-      <h2>About Me</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <!--about me-->
+      <div class=aboutme-heading><h2>about me</h2>
+      <p>somerandontext</p></div>
+      
     </section>
-
     <!-- portfolio container -->
     <section class="page-section" id="work">
-      <figure class="horiseon-bigger-one">
-        <h3>Horiseon Solutions</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </figure>
-      <figure class=""></figure>
-      <h2>Work</h2>
+      <div class="horiseon-bigger-one">
+        <div class="heading"><h3>Horiseon Solutions</h3></div>
+        <p>text here</p>
+      </div>
+      <div class="future-project">
+        <h4>future-project</h4>
+      </div>
     </section>
-
     <!-- contact -->
-    <section class="page-section contact" id="contact-me">
-      <h2>Contact Me</h2>
+    <section class="page-section" id="contact-me">
+      <h2>contact me</h2>
     </section>
   </main>
+
   <footer>
     <p>irinascv © in collab with edex front-end development bootcamp</p><br>
     <p>kaboompics © free images</p>
+    <p>Photo by Mario Gogh on Unsplash</p>
+    <p>Photo by Samantha Gades on Unsplash
+    </p>
   </footer>
 </body>
 

@@ -99,38 +99,106 @@ img {
 }
 
 /*style css grid*/
+
+
 .page-wrapper {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+   "about-me future-project-1 future-project-2"
+  "horiseon-solutions horiseon-solutions horiseon-solutions"
+  "contact-me contact-me contact-me"
+  ;
+}
+
+/*.page-wrapper {
+  margin-top: 10%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 300px 300px 300px;
   grid-template-areas:
-  "about-me work work"
-  "about-me work work"
+  "about-me about-me future-project-1"
+  "horiseon-solutions horiseon-solutions future-project-2"
   "contact-me contact-me contact-me";
 ;
 
-}
+}*/
 
 #about-me {
   grid-area: about-me;
-
+  margin-left: 10%;
 }
 
-#work {
-  grid-area: work;
-  background-image: url;
+/*#future-project {
+  grid-area: future-project;
+  background-image: url(/starter/images/future-project.jpg);
   background-size: cover;
-  width: 300px;
+  background-position: center;
+  height: 300px;
+}*/
+
+#horiseon-solutions {
+  grid-area: horiseon-solutions;
+  background-image: url(/starter/images/pexels-horiseon.jpg);
+  background-size: cover;
+  height: 300px;
+}
+
+#future-project-1 {
+  grid-area: future-project-1;
+  background-image: url(/starter/images/future-project.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+#future-project-2 {
+  grid-area: future-project-2;
+  background-image: url(/starter/images/future-project-1-1.jpg);
+  background-size: cover;
+  background-position: center;
   height: 300px;
 }
 
 #contact-me {
   grid-area: contact-me;
+/*margin-left: 2.7%;*/
 }
 
-.page-contact-me {
-  grid-area: page-contact-me;
+.contact-me-box {
+  align-self: center;
+  justify-self: center;
+}
 
+.page-section {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  display: grid;
+  align-content: end;
+}
+
+.work-heading {
+  background-color: rgb(0,0,0,0.7);
+  width: 100%;
+  padding: 10px;
+  color: var(--color-white);
+  font-family: var(--font-family);
+}
+
+.work-heading a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/*removing underline from links in contact me*/
+.links-contact-me a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
 
@@ -140,14 +208,15 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 0;
+   margin: 0;
   color: var(--color-white);
   font-family: var(--font-family);
 }
 
 p {
-  margin: 0;
+   margin: 0;
   color:#fff;
+  font-family: var(--font-family);
 }
 
 /* ignore below comment as it's another option to display header

@@ -143,7 +143,7 @@ img {
 /* used hover feature to hide background picture for styling purposes */
 #horiseon-solutions:hover {
   grid-area: horiseon-solutions;
-  background-image: url(/starter/images/pexels-horiseon.jpg);
+  background-image: url(/starter/images/kaboompics_glass-of-water-magazine-bw-black-and-white-29161.jpg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -262,6 +262,8 @@ p {
   .credits {
     font-size: x-small;
   }
+
+/* added media screen for nice display on phone and tablet, made css grid as flex boxes, changed font sizes on h and p tags */
 
   @media screen and (max-width: 768px) {
 body {

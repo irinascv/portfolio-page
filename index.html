@@ -21,21 +21,25 @@
   </header>
 
   <div class="avatar"><img src="starter/images/avatar.png" alt="Avatar"></div> <!--adding avatar in div for styling purposes-->
+
   <section class="logo-banner">
+    <p>note:</p>
       <h2>« hard work beats talent<br>
         when talent doesn't work hard 	»</h2> <!-- space for future work related lines/inspirational quotes -->
       <p>— tim notke</p>
   </section>
 
-  <main class="page-wrapper"> <!--note: page-wrapper = css grid in css file starts from here -->
+  <!--note: page-wrapper - css grid starts from here -->
+  <main class="page-wrapper"> 
 
     <section class="aboutme-heading" id="about-me">
       <!--about me-->
       <div><h2>about me:</h2>
       <hr>
       <p>hi! 🌿<br>
-        my name is Irina, and I aspire to become a professional Front-End Developer. my enduring interest with webpage design motivated me to enroll in a bootcamp, with the ultimate goal of transitioning my current career to the tech industry. 
-        I am committed to updating this page regularly to reflect my skills, showcasing both my progress and completed projects. 💪</p>
+       <br> my name is Irina, and I aspire to become a professional Front-End Developer. <br>
+        <br>my enduring interest with webpage design motivated me to enroll in a bootcamp, with the ultimate goal of transitioning my current career to the tech industry. <br>
+        <br>I am committed to updating this page regularly to reflect my skills, showcasing both my progress and completed projects. 💪</p>
       </div>
     
     </section>
@@ -47,17 +51,23 @@
       </div>
     </section>
 
-<!-- work - horiseon-solutions -->
-    <section class="page-section" id="horiseon-solutions">
-      <a href="https://irinascv.github.io/horiseon-management-website/" target="_blank">
-      <div class="work-heading">
-        <h2>— horiseon solutions</a></h2>
-        <p>seo, online managements and social media marketing services</p>
-      </div>
-    </a>
-    </section>
+<!-- work - horiseon-solutions -->    
+
+<!-- <section class="page-section" id="horiseon-solutions">  replaced "section" tag with "a" tag for css background image to be clicable;
+  tried to put img in html, however, image stretched and did not look presentable --> 
+
+  <a href="https://irinascv.github.io/horiseon-management-website/" target="_blank" class="page-section" id="horiseon-solutions">
+  <div class="work-heading">
+    <h2>— horiseon solutions</h2>
+    <p>seo, online managements and social media marketing services</p>
+  </div>
+</a>
+      <!--</section>-->
+  
+
 
     <!-- work - future-project-2 -->
+
     <section class="page-section" id="future-project-2">
       <div class="work-heading">
         <h2>— coming soon</h2>
@@ -65,6 +75,7 @@
     </section>
 
     <!-- contact me -->
+
     <section class="contact-me-box" id="contact-me">
       <hr>
       <div class="links-contact-me">
@@ -74,7 +85,7 @@
     </div>
     </section>
   </main>
- <!-- end of css grid, footer: -->
+ <!-- end of css grid -->
 
   <footer class="footer-style">
     <span style="text-align:center">

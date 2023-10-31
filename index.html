@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>irinascv: Portfolio Page / Front-End Web Development</title>
+  <title>irinascv: Portfolio Page | Front-End Web Development</title>
   <link rel="stylesheet" href="starter/css/style.css" />
 </head>
 
@@ -23,28 +23,22 @@
   <div class="avatar"><img src="starter/images/avatar.png" alt="Avatar"></div> <!--adding avatar in div for styling purposes-->
   <section class="logo-banner">
       <h2>« hard work beats talent<br>
-        when talent doesn't work hard 	»</h2> <!-- space for future work related lines -->
+        when talent doesn't work hard 	»</h2> <!-- space for future work related lines/inspirational quotes -->
       <p>— tim notke</p>
   </section>
 
-  <main class="page-wrapper"> <!--note: page-wrapper is container! -->
+  <main class="page-wrapper"> <!--note: page-wrapper = css grid in css file starts from here -->
 
-    <section class="page-section" id="about-me">
+    <section class="aboutme-heading" id="about-me">
       <!--about me-->
-      <div class=aboutme-heading><h2>about me:</h2>
-      <hr></div>
-      <p class="paragraph-about-me">hi! 🌿<br>
+      <div><h2>about me:</h2>
+      <hr>
+      <p>hi! 🌿<br>
         my name is Irina, and I aspire to become a professional Front-End Developer. my enduring interest with webpage design motivated me to enroll in a bootcamp, with the ultimate goal of transitioning my current career to the tech industry. 
         I am committed to updating this page regularly to reflect my skills, showcasing both my progress and completed projects. 💪</p>
+      </div>
     
     </section>
-
-    <!-- <section class="page-section" id="future-project">
-        <div class="heading">
-          <h2>future-project</h2>
-        </div>
-        <p>text here if any</p>
-      </section>  -->
 
     <!-- work - future-project-1 -->
       <section class="page-section" id="future-project-1">
@@ -55,13 +49,15 @@
 
 <!-- work - horiseon-solutions -->
     <section class="page-section" id="horiseon-solutions">
+      <a href="https://irinascv.github.io/horiseon-management-website/" target="_blank">
       <div class="work-heading">
-        <h2><a href="https://irinascv.github.io/horiseon-management-website/" target="_blank">— horiseon solutions</a></h2>
+        <h2>— horiseon solutions</a></h2>
         <p>seo, online managements and social media marketing services</p>
       </div>
+    </a>
     </section>
 
-    <!-- -->
+    <!-- work - future-project-2 -->
     <section class="page-section" id="future-project-2">
       <div class="work-heading">
         <h2>— coming soon</h2>
@@ -71,21 +67,22 @@
     <!-- contact me -->
     <section class="contact-me-box" id="contact-me">
       <hr>
-      <h2>contact me:</h2>
       <div class="links-contact-me">
+        <h2>contact me:</h2>
         <p> 💻 github: <a href="https://github.com/irinascv" target="_blank">irinascv</a> </p>
-      <p>📨 email address: irinas1406@gmail.com</p>
+        <p> <a href="mailto:irinas1406@gmail.com">📨 send email</a> </p>
     </div>
     </section>
   </main>
+ <!-- end of css grid, footer: -->
 
-  <footer>
-    <p>irinascv © in collab with edex front-end development bootcamp</p><br>
-    <p>kaboompics © free images</p>
-    <p>Photo by cottonbro studio: https://www.pexels.com/photo/black-wooden-framed-black-padded-armchair-4067759/</p>
-    <p>Photo by fauxels: https://www.pexels.com/photo/people-having-business-meeting-together-3183183/
-      Photo by PNW Production: https://www.pexels.com/photo/a-planner-over-a-white-table-8251148/
-      Photo by Monstera Production: https://www.pexels.com/photo/empty-white-frame-hanging-on-wall-with-patterns-6373517/</p>
+  <footer class="footer-style">
+    <span style="text-align:center">
+      <p>💕 irinascv with guidance of edex © 2023</p>
+    <p class="credits">photos by <a href="https://kaboompics.com/gallery/photos/category/business-office?search=&page=7">kaboompics</a>; <a href="https://www.pexels.com/photo/empty-white-frame-hanging-on-wall-with-patterns-6373517/">Monstera Production</a>; <a href="https://www.pexels.com/photo/people-having-business-meeting-together-3183183/">fauxels</a>;
+    <a href="https://www.pexels.com/photo/a-planner-over-a-white-table-8251148/">PNW Production</a>
+  </p>
+  </span>
   </footer>
 </body>
 

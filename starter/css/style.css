@@ -7,7 +7,7 @@
 border-radius: 0.2em;
 --color-white: #fff;
 --space-outside-beige: rgba(242, 239, 226, 0.93);
---another-silver: rgb(146, 144, 144);
+--another-silver: rgb(185, 185, 185);
 --another-beige: rgba(184, 178, 166, 0.84);
 --font-size: 16px;
 --font-family: 'Roboto Mono', monospace;
@@ -37,7 +37,7 @@ body, html {
   display: flex;
   flex-direction: row;
   margin: 0px;
-  background-color: var(--another-silver);
+  background-color: rgb(0,0,0,0.7);
   }
 
   /*style h1 element*/
@@ -68,7 +68,7 @@ body, html {
   padding: 2%;
 }
 
-  .work-in-nav {
+ .work-in-nav {
    margin: 2%;
   }
 .contact-nav {
@@ -78,6 +78,8 @@ body, html {
 /*adjusting logo banner div; using it to place avatar div and quote for styling purposes*/ 
 .logo-banner {
   margin: 2%;
+  margin-bottom: 5%;
+  align-items: center;
 }
 
 .logo-banner h2 {
@@ -108,28 +110,20 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
   grid-template-areas:
+  "about-me horiseon-solutions horiseon-solutions"
    "about-me future-project-1 future-project-2"
-  "horiseon-solutions horiseon-solutions horiseon-solutions"
   "contact-me contact-me contact-me"
-  ;
+   ;
 }
-
-/*.page-wrapper {
-  margin-top: 10%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 300px 300px 300px;
-  grid-template-areas:
-  "about-me about-me future-project-1"
-  "horiseon-solutions horiseon-solutions future-project-2"
-  "contact-me contact-me contact-me";
-;
-
-}*/
 
 #about-me {
   grid-area: about-me;
   margin-left: 10%;
+}
+
+.aboutme-heading {
+  align-self: center;
+  justify-self: center;
 }
 
 /*#future-project {
@@ -140,11 +134,15 @@ img {
   height: 300px;
 }*/
 
-#horiseon-solutions {
+#horiseon-solutions:hover {
   grid-area: horiseon-solutions;
   background-image: url(/starter/images/pexels-horiseon.jpg);
   background-size: cover;
   height: 300px;
+}
+
+#horiseon-solutions:hover{
+  box-shadow: 0 0 50px var(--space-outside-beige);
 }
 
 #future-project-1 {
@@ -155,6 +153,10 @@ img {
   height: 300px;
 }
 
+#future-project-1:hover{
+  box-shadow: 0 0 50px var(--space-outside-beige);
+}
+
 #future-project-2 {
   grid-area: future-project-2;
   background-image: url(/starter/images/future-project-1-1.jpg);
@@ -163,14 +165,19 @@ img {
   height: 300px;
 }
 
+#future-project-2:hover{
+  box-shadow: 0 0 50px var(--space-outside-beige);
+}
+
 #contact-me {
   grid-area: contact-me;
 /*margin-left: 2.7%;*/
 }
 
 .contact-me-box {
-  align-self: center;
-  justify-self: center;
+align-self: auto;
+justify-self: auto;
+margin-left: 2.7%;
 }
 
 .page-section {
@@ -181,6 +188,7 @@ img {
   display: grid;
   align-content: end;
 }
+
 
 .work-heading {
   background-color: rgb(0,0,0,0.7);
@@ -201,6 +209,10 @@ img {
   color: var(--color-white);
 }
 
+.links-contact-me p {
+  display: inline-block;
+}
+
 
 h1,
 h2,
@@ -218,6 +230,18 @@ p {
   color:#fff;
   font-family: var(--font-family);
 }
+
+footer: {
+  }
+
+  .footer-style a {
+    text-decoration: none;
+    color: var(--color-white);
+  }
+
+  .credits {
+    font-size: x-small;
+  }
 
 /* ignore below comment as it's another option to display header
 .header {

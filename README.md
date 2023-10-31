@@ -14,13 +14,12 @@ Portfolio website will undergo frequent updates to ensure it reflects the latest
 
 ## Usage
 
-Navigate to **irinascv -**
-[Portfolio Page](https://irinascv.github.io/portfolio-page/) <br>
+Navigate to **irinascv** [Portfolio Page](https://irinascv.github.io/portfolio-page/) <br>
 
 Click on **work** section and review up-to-date projects.
 
 
-![Portfolio](/starter/images/screenshot-readme-2.png)
+![Portfolio](assets/images/screenshot-readme-2.png)
 
 To review HTML <br>
 and CSS code used for this page, right click and select ***"Inspect"*** :ghost:
